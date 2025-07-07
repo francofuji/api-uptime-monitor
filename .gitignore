@@ -42,10 +42,13 @@ pnpm-debug.log*
 # Testing
 coverage/
 .nyc_output/
+backend/.pytest_cache/
+backend/.mypy_cache/
 
 # Database
 *.sqlite
 *.sqlite3
+backend/.env
 
 # Temporary files
 tmp/
@@ -72,11 +75,32 @@ infrastructure/node_modules/
 .serverless/
 .webpack/
 .dynamodb/
+REMOVE_NODE_BACKEND_INSTRUCTIONS.txt
 
-# Python
-__pycache__/
-*.pyc
+# Python virtual environments
 .venv/
-backend/.env
-backend/.pytest_cache/
-backend/.mypy_cache/
+venv/
+ENV/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Alembic migration artifacts
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# OS/Editor/Tooling
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# VSCode settings (keep only recommended files)
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+.terraform/
