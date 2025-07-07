@@ -1,0 +1,82 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+yarn.lock
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# IDE and editor files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Frontend specific
+frontend/.next/
+frontend/out/
+frontend/.cache/
+frontend/public/sw.js
+frontend/public/workbox-*.js
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Infrastructure
+infrastructure/cdk.out/
+infrastructure/.cdk.staging/
+infrastructure/node_modules/
+
+# Misc
+.serverless/
+.webpack/
+.dynamodb/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+backend/.env
+backend/.pytest_cache/
+backend/.mypy_cache/

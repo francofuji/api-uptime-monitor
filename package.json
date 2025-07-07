@@ -1,0 +1,44 @@
+{
+  "name": "api-uptime-monitor",
+  "version": "1.0.0",
+  "description": "Serverless API uptime monitoring service built with AWS Lambda",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd infrastructure && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "build:all": "cd infrastructure && npm run build && cd ../backend && npm run build && cd ../frontend && npm run build",
+    "test:all": "cd backend && npm test && cd ../frontend && npm test",
+    "deploy:staging": "cd infrastructure && npm run deploy:staging",
+    "deploy:prod": "cd infrastructure && npm run deploy:prod",
+    "local:start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "db:migrate": "cd database && npm run migrate",
+    "db:seed": "cd database && npm run seed",
+    "lint": "cd backend && npm run lint && cd ../frontend && npm run lint",
+    "type-check": "cd backend && npm run type-check && cd ../frontend && npm run type-check"
+  },
+  "workspaces": [
+    "infrastructure",
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/api-uptime-monitor.git"
+  },
+  "keywords": [
+    "uptime-monitoring",
+    "aws-lambda",
+    "serverless",
+    "api-monitoring",
+    "react",
+    "typescript"
+  ],
+  "author": "Francisco Perez",
+  "license": "MIT"
+}

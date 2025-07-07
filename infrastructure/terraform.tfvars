@@ -1,0 +1,6 @@
+aws_region    = "us-east-1"
+db_username   = "ptimemonitor_user"
+db_password   = "1qazxsw23edcvfr4"
+db_name       = "uptimemonitor"
+lambda_package = "lambda.zip"
+jwt_secret    = "$rFvBgT5"

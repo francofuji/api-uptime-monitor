@@ -1,0 +1,9 @@
+fastapi
+mangum
+asyncpg
+uvicorn
+python-dotenv
+bcrypt
+PyJWT
+pydantic
+httpx
